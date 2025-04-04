@@ -1,14 +1,8 @@
-# Podux
+# Pronosticon
 
-Podcast website landing page
-
-![Podux light Theme](./public/screens/podux-light.png)
-![Podux Dark Theme](./public/screens/podux-dark.png)
-
-![Podux Mobile Dark Theme](public/screens/mobileViewDark.jpg)
+Landing page
 
 ## Tools
-
 -   TailwindCSS 3
 -   NUXT 3
 
@@ -19,15 +13,15 @@ Make sure to install the dependencies:
 
 ```bash
 # npm
-npm install
-```
+pnpm install
+``` 
 
 ## Development Server
 
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Production
@@ -35,11 +29,11 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+pnpm run preview
 ```

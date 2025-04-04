@@ -8,30 +8,30 @@
                             <span class="w-3 h-6 rounded-l-full flex bg-primary"></span>
                             <span class="w-3 h-6 rounded-r-full flex bg-[#f88fc2] mt-2"></span>
                         </span>
-                        <span class="text-xl font-bold text-gray-700 dark:text-white">Podux</span>
+                        <span class="text-xl font-bold text-gray-700 dark:text-white">Pronosticon</span>
                     </NuxtLink>
 
                     <p class="text-gray-600 dark:text-gray-300 pt-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo, veritatis
+                        Tu plataforma confiable para resultados de lotería y pronósticos precisos. Mantente informado y juega con inteligencia.
                     </p>
                 </div>
 
-                <BlocksFooterNavBlock title="Enterprise" :links="quickLinks" />
-                <BlocksFooterNavBlock title="Ressources" :links="ressourcesLinks" />
-                <BlocksFooterNavBlock title="Support" :links="supportLinks" />
-                <BlocksFooterNavBlock title="Enterprise" :links="quickLinks" />
+                <BlocksFooterNavBlock title="Resultados" :links="lotteryLinks" />
+                <BlocksFooterNavBlock title="Servicios" :links="servicesLinks" />
+                <BlocksFooterNavBlock title="Información" :links="infoLinks" />
+                <BlocksFooterNavBlock title="Soporte" :links="supportLinks" />
             </div>
         </AtomsContainer>
         <div class="py-2 bg-gray-200 dark:bg-[rgb(10,16,29)]">
             <AtomsContainer>
                 <div class="flex justify-between items-center gap-5 text-gray-600 dark:text-gray-300">
                     <div class="">
-                        &copy; {{ new Date().getFullYear() }} Allright Reserved. Designed by <NuxtLink target="_blank"
-                            to="#" class="font-bold text-primary">Kat Mj</NuxtLink>
+                        &copy; {{ new Date().getFullYear() }} Todos los derechos reservados. Desarrollado por <NuxtLink target="_blank"
+                            to="https://pronosticon.com" class="font-bold text-primary">Pronosticon</NuxtLink>
                     </div>
 
                     <div class="flex items-center gap-x-3">
-                        <NuxtLink target="_blank" to="#" class="transition hover:!text-primary">
+                        <NuxtLink target="_blank" to="https://twitter.com/pronosticon" class="transition hover:!text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="w-5 h-5" viewBox="0 0 16 16">
                                 <path
@@ -40,7 +40,7 @@
                             </svg>
                         </NuxtLink>
 
-                        <NuxtLink target="_blank" to="https://github.com/johnkat-mj" class="transition hover:!text-primary">
+                        <NuxtLink target="_blank" to="https://github.com/pronosticon" class="transition hover:!text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="w-5 h-5" viewBox="0 0 16 16">
                                 <path
@@ -56,57 +56,71 @@
 </template>
 
 <script lang="ts" setup>
-const quickLinks = [
+const lotteryLinks = [
     {
-        href: "#",
-        text: "About us"
+        href: "/resultados",
+        text: "Resultados de Lotería"
     },
     {
-        href: "#",
-        text: "News"
+        href: "/pronosticos",
+        text: "Pronósticos"
     },
     {
-        href: "#",
-        text: "Team"
+        href: "/productos",
+        text: "Productos de Lotería"
     },
     {
-        href: "#",
-        text: "Solution"
+        href: "/sorteos",
+        text: "Próximos Sorteos"
     }
 ]
-const ressourcesLinks = [
+
+const servicesLinks = [
     {
-        href: "#",
-        text: "Developpers"
+        href: "/verificar-boleto",
+        text: "Verificar Boleto"
     },
     {
-        href: "#",
-        text: "Integration"
+        href: "/estadisticas",
+        text: "Estadísticas"
     },
     {
-        href: "#",
-        text: "Pricing"
+        href: "/numeros-frecuentes",
+        text: "Números Frecuentes"
+    }
+]
+
+const infoLinks = [
+    {
+        href: "/nosotros",
+        text: "Sobre Nosotros"
+    },
+    {
+        href: "/noticias",
+        text: "Noticias"
+    },
+    {
+        href: "/contacto",
+        text: "Contacto"
     }
 ]
 
 const supportLinks = [
     {
-        href: "#",
-        text: "Contact-us"
+        href: "/preguntas-frecuentes",
+        text: "Preguntas Frecuentes"
     },
     {
-        href: "#",
-        text: "Licence"
+        href: "/terminos",
+        text: "Términos de Servicio"
     },
     {
-        href: "#",
-        text: "Terms"
+        href: "/privacidad",
+        text: "Política de Privacidad"
     },
     {
-        href: "#",
-        text: "FAQ"
+        href: "/ayuda",
+        text: "Centro de Ayuda"
     }
 ]
-
-
 </script>

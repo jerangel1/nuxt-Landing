@@ -9,22 +9,22 @@ function toggleNav(event: MouseEvent): void {
 
 const navLinks = [
     {
-        text: "Podcast",
+        text: "Resultados de Lotería",
         href: "/"
     },
     {
-        text: "Solution",
-        href: "/"
+        text: "Pronósticos",
+        href: "/pronosticos"
     },
     {
-        text: "Blog",
-        href: "/"
+        text: "Productos",
+        href: "/productos"
     },
     {
-        text: "About",
-        href: "/"
+        text: "Contacto",
+        href: "/contacto"
     }
-]
+]   
 
 </script>
 <template>
@@ -38,7 +38,7 @@ const navLinks = [
                             <span class="w-3 h-6 rounded-l-full flex bg-primary"></span>
                             <span class="w-3 h-6 rounded-r-full flex bg-[#f88fc2] mt-2"></span>
                         </span>
-                        <span class="text-lg text-gray-700 dark:text-white">Podux</span>
+                        <span class="text-lg text-gray-700 dark:text-white">Pronosticon</span>
                     </NuxtLink>
                 </div>
                 <div 
@@ -57,10 +57,10 @@ const navLinks = [
                     <ElementsThemeSwitcher />
                     <div class="hidden lg:flex lg:items-center gap-4">
                         <AtomsLinkBtn href="#" variant="secondary">
-                            Signin
+                            Iniciar Sesión
                         </AtomsLinkBtn>
                         <AtomsLinkBtn href="#" variant="primary">
-                            Join Us
+                            Únete
                         </AtomsLinkBtn>
                     </div>
 
@@ -81,14 +81,14 @@ const navLinks = [
                                     <li
                                         class="flex select-none cursor-pointer items-center gap-3 px-2 py-2 rounded-md transition hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-200">
                                         <NuxtLink to="#">
-                                            Join-us
+                                            Únete
                                         </NuxtLink>
                                     </li>
 
                                     <li
                                         class="flex select-none cursor-pointer items-center gap-3 px-2 py-2 rounded-md transition hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-200">
                                         <NuxtLink to="#">
-                                            Signin
+                                            Iniciar Sesión
                                         </NuxtLink>
                                     </li>
                                 </ul>
